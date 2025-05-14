@@ -21,7 +21,7 @@ Knowledge-Graph-Construction/
 
 🚀 Getting Started:
 1. Clone the Repository:
-git clone https://github.com/yourusername/knowledge-graph-construction.git
+git clone https://github.com/AmreenShaheen/Knowledge-Graph-Construction.git
 cd knowledge-graph-construction
 
 2. Install Dependencies
