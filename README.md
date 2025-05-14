@@ -1,0 +1,65 @@
+📚 Knowledge Graph Construction From Text:
+This project extracts subject–predicate–object triplets from user-input sentences and visualizes them as a knowledge graph.
+
+✨ Features
+-> Extracts triplets like (subject, relation, object) from English text.
+
+-> Supports multiple user inputs.
+
+-> Visualizes knowledge graphs using NetworkX and matplotlib.
+
+-> Handles basic passive and active voice constructs.
+
+📁 Project Structure:
+Knowledge-Graph-Construction/
+├── main.py                # Main program to run the input loop and visualize graph
+├── src/
+│   ├── extractor.py       # spaCy-based triplet extraction logic
+│   └── graph_builder.py   # Graph construction and aesthetic visualization
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
+
+🚀 Getting Started:
+1. Clone the Repository:
+git clone https://github.com/yourusername/knowledge-graph-construction.git
+cd knowledge-graph-construction
+
+2. Install Dependencies
+Create a virtual environment (optional but recommended):
+python -m venv venv
+source venv/bin/activate  # on Windows use: venv\Scripts\activate
+
+3. Install the required packages:
+pip install -r requirements.txt
+
+4. Download the spaCy language model:
+python -m spacy download en_core_web_sm
+
+💻 Usage:
+python main.py
+
+You will be prompted to enter multiple sentences or paragraphs. Type exit to stop and visualize the knowledge graph.
+Example Input:
+Elon Musk founded SpaceX.
+
+Expected Triplets:
+('Musk', 'found', 'SpaceX.')
+
+📊 Output
+A static but a visual graph window will open.
+
+Nodes represent entities (subjects/objects).
+
+Arrows represent the relationships (predicates).
+
+Labels are clean and color-coded for clarity.
+
+📌 Future Improvements
+Enable interactive web-based graphs using tools like pyvis or D3.js.
+
+Integrate co-reference resolution for better pronoun handling.
+
+Extend extraction with deep NLP (transformers, OpenIE, etc.).
+
+🧑‍💻 Author
+Amreen Shaheen A
